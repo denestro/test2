@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="block" style="width: 100px; height: 100px; background-color: gray;"></div>
+<button id="toggleBtn">Toggle Block</button>
+
+<script>
+    const block = document.getElementById('block');
+    const button = document.getElementById('toggleBtn');
+
+    button.addEventListener('click', () => {
+        block.style.display = block.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+
+<script src="test.js"></script>
+
+</body>
+</html>
